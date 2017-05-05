@@ -49,11 +49,11 @@ function decimalToBinary(number){
   for(i=binaryReverse.length-1; i>=0; --i){
     binary.push(binaryReverse[i]);
   }
-  console.log(binary);
   return binary;
 }
 
 function binaryPingPong(binaryNumber){
+  console.log(binaryNumber);
   var pingOrpong = [];
   for(i=0; i<binaryNumber.length; i++){
     if(binaryNumber[i] === 1){
@@ -76,11 +76,14 @@ $(document).ready(function(){
     event.preventDefault();
     var numberToPlay = $("input#user_input").val();
     var result = playPingPong(numberToPlay);
-    decimalToBinary(numberToPlay);
+    var result_binary = binaryPingPong(decimalToBinary(numberToPlay));
+    console.log(result_binary);
     clearScreen();
     for(i=0; i<result.length; i++){
-      $("ul.list").append("<li>" + result[i] + "</li>");
+      $("ul.decimal").append("<li>" + result[i] + "</li>");
     };
-
+    for(i=0; i<result_binary.length; i++){
+      $("ul.binary").append("<li>"+ result_binary[i]+ "</li>");
+    };
   });
 });

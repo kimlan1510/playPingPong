@@ -9,10 +9,11 @@
 _This program will count up to the input number and display "ping" or "pong" or "ping-pong" depending on the set rules. Also, this program will convert decimal numbers to binary numbers._
 
 ## Specifications
- _This program will perform the following actions_
+ _This program will perform the following _
+
  _
  | Behavior                                                                               |Input Example   | Output Example      |
- |---                                                                                     |:---:           |---:                 |
+ |----------------                                                                        |:----------:    |------------:        |
  | return a range of number from 1 to user input                                          |  5             |  1, 2, 3, 4, 5      |
  |  divisible by 3 are replaced with "ping"                                               | 9              | ping                |
  | divisible by 5 are replaced with "pong"                                                | 10             | pong                |

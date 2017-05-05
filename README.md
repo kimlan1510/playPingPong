@@ -10,16 +10,16 @@ _This program will count up to the input number and display "ping" or "pong" or 
 
 ## Specifications
  _This program will perform the following actions_
- | Behavior  |Input Example   | Output Example  |
- |---|---|---|
- | return a range of number from 1 to user input  |  5 |  1, 2, 3, 4, 5 |
- |  divisible by 3 are replaced with "ping" | 9   | ping   |
- | divisible by 5 are replaced with "pong"  | 10  | pong  |
- | divisible by 15 are replaced with "ping-pong  | 15  | ping-pong  |
- |return a range of number from 1 to user input and add the previous specs on top of it   | 5  |1, 2, ing, 4, pong   |
- | convert decimal to binary  | 5  | 101  |
- | convert 1 to "ping" and 0 to "pong"  | 101  |ping, pong, ping   |
- 
+ | Behavior                                                                               |Input Example   | Output Example      |
+ |---                                                                                     |:---:           |---:                 |
+ | return a range of number from 1 to user input                                          |  5             |  1, 2, 3, 4, 5      |
+ |  divisible by 3 are replaced with "ping"                                               | 9              | ping                |
+ | divisible by 5 are replaced with "pong"                                                | 10             | pong                |
+ | divisible by 15 are replaced with "ping-pong                                           | 15             | ping-pong           |
+ |return a range of number from 1 to user input and add the previous specs on top of it   | 5              |1, 2, ing, 4, pong   |
+ | convert decimal to binary                                                              | 5              | 101                 |
+ | convert 1 to "ping" and 0 to "pong"                                                    | 101            |ping, pong, ping     |
+
 ## Setup/Installation Requirements
 
 * _Download or clone this file using Git_

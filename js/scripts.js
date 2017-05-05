@@ -80,10 +80,10 @@ $(document).ready(function(){
     console.log(result_binary);
     clearScreen();
     for(i=0; i<result.length; i++){
-      $("ul.decimal").append("<li>" + result[i] + "</li>");
+      $("ul#decimal").append("<li>" + result[i] + "</li>");
     };
     for(i=0; i<result_binary.length; i++){
-      $("ul.binary").append("<li>"+ result_binary[i]+ "</li>");
+      $("ul#binary").append("<li>"+ result_binary[i]+ "</li>");
     };
   });
 });

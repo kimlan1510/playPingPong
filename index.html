@@ -9,22 +9,42 @@
     <title>PING PONG</title>
   </head>
   <body>
-    <div class="container">
-      <h1>Lets Play Pingpong</h1>
-      <form id="pingpong">
-        <label for="user_input">Enter your number here</label>
-        <input type="text" id="user_input" class="form-control">
-        <button type="submit" class="btn btn-default">Click to play</button>
-      </form>
-      <div class="output">
-        <ul class="decimal">
-          <h3>Regular Ping Pong</h3>
-        </ul>
+    <div class="container-fluid">
+      <div class = "header">
+        <h1>Lets Play Ping Pong</h1>
+      </div>
+      <div class="form_section">
+        <form id="pingpong">
+          <label for="user_input">Enter your number here</label>
+          <input type="text" id="user_input" class="form-control">
+          <center><button type="submit" class="btn btn-default">Click to play</button></center>
+        </form>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-sm-6">
+          <div class="description1">
+            <h3>Decimal Ping Pong</h3>
+            <p>Ping pong will count up to your number from with the following exceptions:</p>
+            <ol>
+              <li value ="1">Numbers divisible by 3 become "ping"</li>
+              <li>Numbers divisibe by 5 become "pong"</li>
+              <li>numbers divisible by 3 and 5 become "ping-pong"</li>
+              </ol>
+          </div>
+          <ul class="list" id="decimal"></ul>
+        </div>
 
-        <ul class="binary">
-          <h3>Binary Ping Pong</h3>
-        </ul>
-
+        <div class="col-md-6 col-sm-6">
+          <div class="description2">
+            <h3>Binary Ping Pong</h3>
+            <p> Ping pong will convert your number to a correspondent binary number:
+              <ol>
+                <li value="1">Number 1 becomes "ping"</li>
+                <li>Number 0 becomes "pong"</li>
+              </ol>
+          </div>
+          <ul class="list" id="binary"></ul>
+        </div>
       </div>
     </div>
 

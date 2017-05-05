@@ -1,4 +1,4 @@
-# _Lets Play Pong_
+# _Lets Play Ping Pong_
 
 #### _Display "ping" or "pong" or "ping-pong" depending on the number, May 5, 2017_
 
@@ -9,9 +9,9 @@
 _This program will count up to the input number and display "ping" or "pong" or "ping-pong" depending on the set rules. Also, this program will convert decimal numbers to binary numbers._
 
 ## Specifications
- _This program will perform the following _
+ _This program will perform the following_
 
- _
+
  | Behavior                                                                               |Input Example   | Output Example      |
  |----------------                                                                        |:----------:    |------------:        |
  | return a range of number from 1 to user input                                          |  5             |  1, 2, 3, 4, 5      |
@@ -21,7 +21,7 @@ _This program will count up to the input number and display "ping" or "pong" or 
  |return a range of number from 1 to user input and add the previous specs on top of it   | 5              |1, 2, ing, 4, pong   |
  | convert decimal to binary                                                              | 5              | 101                 |
  | convert 1 to "ping" and 0 to "pong"                                                    | 101            |ping, pong, ping     |
- _
+
 
 ## Setup/Installation Requirements
 

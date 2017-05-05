@@ -12,18 +12,18 @@ function playPingPong (number){
     }
     else{
       var pingOrpong = [];
-      for(i=1, i=< number, i++){
-        if(number%3 === 0 && number%5 === 0){
+      for(i=1; i<=number; i++){
+        if(i%3 === 0 && i%5 === 0){
           pingOrpong.push("ping-pong");
         }
-        else if(number%3 === 0){
+        else if(i%3 === 0){
           pingOrpong.push("ping");
         }
-        else if(number%5 === 0){
+        else if(i%5 === 0){
           pingOrpong.push("pong");
         }
         else{
-          pingOrpong.push("i");
+          pingOrpong.push(i);
         }
       }
     }
@@ -33,9 +33,13 @@ function playPingPong (number){
 
 
 $(document).ready(function(){
-  $("form#pingpong").submit(function(){
+  $("form#pingpong").submit(function(event){
+    event.preventDefault();
     var numberToPlay = $("input#user_input").val();
     var result = playPingPong(numberToPlay);
-    $("ul.list").
+    for(i=0; i<result.length; i++){
+      $("ul.list").append("<li>" + result[i] + "</li>");
+    };
+
   });
 });

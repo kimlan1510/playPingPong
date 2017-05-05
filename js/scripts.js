@@ -31,12 +31,53 @@ function playPingPong (number){
   return pingOrpong;
 }
 
+function decimalToBinary(number){
+  var binaryReverse = [];
+  var binary = [];
+  while(number != 0){
+    var remainder = number % 2;
+    if(remainder === 0){
+      var zero = 0;
+      binaryReverse.push(0);
+    }
+    else{
+      var one = 1;
+      binaryReverse.push(1);
+    }
+    number = (number - number%2)/2;
+  }
+  for(i=binaryReverse.length-1; i>=0; --i){
+    binary.push(binaryReverse[i]);
+  }
+  console.log(binary);
+  return binary;
+}
+
+function binaryPingPong(binaryNumber){
+  var pingOrpong = [];
+  for(i=0; i<binaryNumber.length; i++){
+    if(binaryNumber[i] === 1){
+      pingOrpong.push("ping");
+    }
+    else if(binaryNumber[i] === 0){
+      pingOrpong.push("pong");
+    }
+  }
+  return pingOrpong;
+}
+
+
+function clearScreen(){
+  $("ul.list").text("");
+}
 
 $(document).ready(function(){
   $("form#pingpong").submit(function(event){
     event.preventDefault();
     var numberToPlay = $("input#user_input").val();
     var result = playPingPong(numberToPlay);
+    decimalToBinary(numberToPlay);
+    clearScreen();
     for(i=0; i<result.length; i++){
       $("ul.list").append("<li>" + result[i] + "</li>");
     };
